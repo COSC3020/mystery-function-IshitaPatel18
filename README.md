@@ -12,3 +12,9 @@ function mystery(a) {
     else return a[0];
 }
 ```
+
+My answer:
+The code is looking for the greatest value in the array using recursion. Mystery is repeatedly called using the subarrays until
+the termination case is reached, which returns the last element in the array (makes it equal to foo), and then checks it with a[0] in the previous
+recursive call to see if it is greatest. If it is, foo returned for the previous call, if not a[0] is returned for the previous call, which makes
+it equal to foo. This continues until the original function call, which produces the greatest value in the array.
